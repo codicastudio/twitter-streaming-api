@@ -1,0 +1,39 @@
+{
+    "name": "codicastudio/twitter-streaming-api",
+    "description": "A random Codica Studio package.",
+    "homepage": "https://github.com/codicastudio/twitter-streaming-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "mbrown@codicastudio.com",
+            "homepage": "https://codicastudio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "fennb/phirehose": "dev-master#405d125db9baa771ac0cd861f0b2b2032434d40c"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\TwitterStreamingApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\TwitterStreamingApi\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
